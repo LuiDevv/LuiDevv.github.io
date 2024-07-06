@@ -1,0 +1,447 @@
+/* Variables utilizadas para el CSS */
+:root {
+
+    /* MODO CLARO */
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --navbar-bg-color-light: rgba(255, 255, 255, 0.8);
+    --navbar-text-color-light: #000000;
+    --navbar-hover-color-light: rgb(255, 115, 0);
+    --info-bg-color-light: rgba(255, 255, 255, 0.1);
+    --info-text-color-light: #000000;
+    --card-bg-color-light: #f9f9f9;
+    --card-text-color-light: #333;
+    
+    /* MODO OSCURO */
+    --background-color-dark: #1c1c1c;
+    --text-color-dark: #ffffff;
+    --navbar-bg-color-dark: rgba(44, 44, 44, 0.8);
+    --navbar-text-color-dark: #ffffff;
+    --navbar-hover-color-dark: rgb(255, 115, 0);
+    --info-bg-color-dark: rgba(0, 0, 0, 0.1);
+    --info-text-color-dark: #ffffff;
+    --card-bg-color-dark: #333333;
+    --card-text-color-dark: #f9f9f9;
+
+    
+}
+
+body {
+    background: url(background/back.jpg);
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    align-items: center;
+    padding-top: 70px;
+}
+
+.head, .col {
+    color: var(--text-color-light);
+}
+
+
+/* CARRUSEL */
+.carousel {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px; 
+    min-height: 500px;
+    max-height: 500px;
+    object-fit: cover; 
+    border-radius: 5%;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 400px;
+    margin: 10px 0; 
+}
+.carousel-image {
+    width: 100%;
+    height: 500px; 
+    min-height: 500px;
+    max-height: 500px;
+    object-fit: cover; 
+    border-radius: 5%;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* NAVBAR */
+header {
+    margin: 0 30px auto;
+}
+
+
+.custom-bg {
+    background: var(--navbar-bg-color-light);
+}
+
+.custom-bg .navbar-brand,
+.custom-bg .nav-link {
+    color: var(--navbar-text-color-light);
+    display: block;
+    margin-top: auto;
+}
+
+.custom-bg .nav-link:hover {
+    color: var(--navbar-hover-color-light); 
+}
+
+.custom-bg .navbar-nav .nav-link.active, 
+.custom-bg .navbar-nav .nav-link:focus {
+    color: var(--navbar-hover-color-light) !important; 
+    background-color: transparent !important; 
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+
+/* CONTAINERS Y GRID */
+.row {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0 auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.text {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    text-align: left;
+    padding: 14.5px 14px 14px 14px;
+    color: var(--text-color-light); 
+    background: var(--info-bg-color-light);
+    backdrop-filter: blur(10px);
+    border-radius: 5%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto 0 30px;
+    text-align: center;
+    padding: 25px;
+    color: var(--text-color-light); 
+    background: var(--info-bg-color-light);
+    backdrop-filter: blur(10px);
+    border-radius: 2%;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+#cont {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.col {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    color: var(--text-color-light);
+    font-family: "Montserrat";
+    margin: 0 0 20px 20px;
+}
+
+.custom-img {
+    display: block;
+    border-radius: 5%;
+    height: 960px;
+    margin: 0 auto;
+}
+
+
+/* SECCION DE CONTACTO */
+.contacto {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+}
+
+.contacto h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contacto p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.contacto ul li {
+    margin-bottom: 10px;
+}
+
+.contacto ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contacto ul li a:hover {
+    text-decoration: underline;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto form label {
+    margin-bottom: 5px;
+}
+
+.contacto form input,
+.contacto form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contacto form button {
+    padding: 10px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contacto form button:hover {
+    background-color: #000000;
+}
+.contact-cont {
+    background: var(--info-bg-color-light);
+    backdrop-filter: blur(10px);
+    border-radius: 2%;
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    color: black;
+}
+
+label {
+    border: 10px white solid;
+}
+.custom-margin {
+    margin: 0 auto 30px 0;
+}
+.contacto-formulario .instagram-link {
+    color: #E1306C;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.contacto-formulario .instagram-link:hover {
+    color: #B1225A;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+
+/* SECCION DE PRECIOS */
+.precio-card {
+    background-color: var(--card-bg-color-light);
+    color: var(--card-text-color-light);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.precio-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.precio-card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--card-text-color-light);
+}
+
+.precio-card p {
+    font-size: 1.2rem;
+    color: var(--card-text-color-light);
+}
+
+.precio-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.precio-card ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--card-text-color-light);
+}
+
+@media (max-width: 992px) {
+    .precio-card {
+        padding: 20px;
+    }
+}
+
+/* SECCION DE RECURSOS */
+#recursos {
+    padding: 50px 0;
+    background: linear-gradient(135deg, rgba(91, 91, 91, 0.879), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+}
+
+.resource-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resource-container h2 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--info-text-color-light);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.resource-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.resource-col {
+    flex: 1 1 45%;
+    margin: 20px;
+}
+
+.resource-col h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.resource-iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Dark mode */
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .head, 
+body.dark-mode .col {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .custom-bg {
+    background: var(--navbar-bg-color-dark);
+}
+
+body.dark-mode .custom-bg .navbar-brand,
+body.dark-mode .custom-bg .nav-link {
+    color: var(--navbar-text-color-dark);
+}
+
+body.dark-mode .custom-bg .nav-link:hover {
+    color: var(--navbar-hover-color-dark); 
+}
+
+body.dark-mode .custom-bg .navbar-nav .nav-link.active, 
+body.dark-mode .custom-bg .navbar-nav .nav-link:focus {
+    color: var(--navbar-hover-color-dark) !important;
+}
+
+body.dark-mode .text {
+    background: var(--info-bg-color-dark);
+    color: var(--info-text-color-dark);
+}
+
+body.dark-mode .info {
+    background: var(--info-bg-color-dark);
+    color: var(--info-text-color-dark);
+}
+
+body.dark-mode .contact-cont {
+    background: var(--info-bg-color-dark);
+}
+
+body.dark-mode footer {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .precio-card {
+    background-color: var(--card-bg-color-dark);
+    color: var(--card-text-color-dark);
+}
+
+body.dark-mode .precio-card h5,
+body.dark-mode .precio-card p,
+body.dark-mode .precio-card ul li {
+    color: var(--card-text-color-dark);
+}
+body.dark-mode .contact-cont {
+    background-color: var(--info-bg-color-dark);
+    color: var(--info-text-color-dark);
+}
+
+body.dark-mode #recursos h2,
+body.dark-mode #recursos h3 {
+    color: var(--info-text-color-dark);
+}
+
+

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Tavarez">
+    <meta name="keywords" content="Guitarra, Servicio, Acustica, Electrica">
+    <meta name="description" content="">
+
+    <!--CDN LINKS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/SEGUNDO PARCIAL/icon/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    
+    <title>LT Guitar</title>
+</head>
+<body id="home">
+    <!--NAV BAR EXTRAIDO DE BOOTSTRAP-->
+    <nav class="navbar navbar-expand-lg custom-bg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" onclick="scrollToTop()">
+              <img src="/icon/logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#servicios">Servicios</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#precio">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recursos">Recursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#informacion">Mas informacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <button style="margin-left: 760px; background-color: black;" id="toggle-dark-mode" class="btn btn-secondary">Display</button>
+            </li>
+              
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+
+      <header class="head">
+        <main id="main-section" class="main-section text-center">
+            <div class="container">
+                <h1 style="color:#fff;">Bienvenido a Luis Tavarez Guitar Tech</h1>
+                <p style="color:#fff">Descubre el mundo de la guitarra con nuestros expertos. Ofrecemos clases personalizadas para todos los niveles, desde principiantes hasta avanzados, en guitarra acústica y eléctrica. Aprende teoría musical, técnicas de improvisación, y mucho más.</p>
+                <a href="#precio" class="btn btn-primary">Mira aqui nuestros planes de clases!</a>
+            </div>
+        </main>
+        
+    </header> 
+    <br>
+    <br>
+    <div id="servicios" class="container text-center h-100 d-flex align-items-center">
+      <div class="row w-100">
+        <div class="col">
+          <div id="carouselExampleCaptions" class="carousel slide custom-margin shadow-lg w-100 h-100" data-bs-ride="carousel" data-bs-interval="4000">
+      
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner h-100">
+                      <div class="carousel-item active w-100 h-100">
+                          <img src="icon/slide1.jpg" class="d-block w-100 carousel-image" alt="">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Guitarra Acustica</h5>
+                              <p>Tenemos servicios de clases para Guitarra Acustica</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item w-100 h-100">
+                          <img src="icon/slide2.jpg" class="d-block w-100 carousel-image" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Guitarra Electrica</h5>
+                              <p>Tenemos servicios de clases para Guitarra Electrica</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item w-100 h-100">
+                          <img src="icon/slide3.jpg" class="d-block w-100 carousel-image" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Teoria Musical</h5>
+                              <p>Tambien ensenamos teoria musical!</p>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+          </div>
+          <div class="col d-flex align-items-center" id="cont">
+              <div class="text shadow-lg">
+                  <h2 style="text-align: center;" >Servicios</h2>
+                  <br>
+                  <ul>
+                      <li>
+                          <strong>Clases de Guitarra Acústica</strong>
+                          <ul>
+                              <li>Lecciones para principiantes, intermedios y avanzados.</li>
+                              <li>Técnicas de rasgueo y punteo.</li>
+                              <li>Acordes y progresiones.</li>
+                          </ul>
+                      </li>
+                      <li>
+                          <strong>Clases de Guitarra Eléctrica</strong>
+                          <ul>
+                              <li>Lecciones para todos los niveles.</li>
+                              <li>Técnicas de solo y riffs.</li>
+                              <li>Uso de pedales y efectos.</li>
+                          </ul>
+                      </li>
+                      <li>
+                          <strong>Teoría Musical</strong>
+                          <ul>
+                              <li>Lectura de partituras.</li>
+                              <li>Entrenamiento auditivo.</li>
+                              <li>Composición y arreglos.</li>
+                          </ul>
+                      </li>
+                  </ul>
+                  <br>
+                  <a href="#informacion">
+                      <h5 style="text-align: center;">Más información</h5>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div id="precio" class="container">
+    <h1 style="color:#fff;">Precios</h1>
+    <hr>
+    <div class="row">
+        
+        <div class="colu h-100 w-50 mb-4">
+            <div class="precio-card">
+                <h5>Clases de Guitarra</h5>
+                <p><strong>Precio:</strong> $10/mensual</p>
+                <br>
+                <ul>
+                    <li>Clases personalizadas de guitarra acústica.</li>
+                    <li>Horarios flexibles para todos los niveles.</li>
+                    <li>Material de estudio incluido.</li>
+                    <li>Entrenamiento auditivo y técnico.</li>
+                </ul>
+            </div>
+        </div>
+       
+        <div class="colu1 h-100 w-50 mb-4">
+            <div class="precio-card">
+                <h5>Guitarra y Teoría</h5>
+                <p><strong>Precio:</strong> $25/mesual</p>
+                <br>
+                <ul>
+                    <li>Clases de guitarra con teoría musical integrada.</li>
+                    <li>Profesores especializados en técnica y teoría.</li>
+                    <li>Material didáctico avanzado.</li>
+                    <li>Preparación para exámenes de teoría musical.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="h-100 mb-4">
+            <div class="precio-card">
+                <h5>Guitarra, Teoría y Asesoramiento</h5>
+                <p><strong>Precio:</strong> $35/mensual</p>
+                <ul>
+                    <li>Programa completo con asesoramiento en equipamiento.</li>
+                    <li>Preparación para exámenes y audiciones.</li>
+                    <li>Acceso a clases en línea y presenciales.</li>
+                    <li>Estudio de estilos musicales diversos.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<section id="recursos">
+    <div class="resource-container">
+        <h2>Recursos</h2>
+        <div class="resource-row">
+            <div class="resource-col">
+                <h3>Aprende de los grandes: </h3>
+                <h5>Wayne Krantz</h5>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/v6F83uiiNeM?si=QINNW2bvTlBF2oMt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <hr>
+                <h5>Yasser Tejeda</h5>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0uZJNQpg52c?si=wIuEbs9emEEsB7DQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="resource-col">
+                <h3>Ubicacion de clases presenciales:</h3>
+                <iframe style="margin-top: 90px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4081379460963!2d-69.9642461!3d18.465163099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea561fd060dfb0d%3A0x3c00cd49d5b0bb58!2sPraderas%20Park!5e0!3m2!1sen!2sdo!4v1719948580999!5m2!1sen!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+
+
+
+  
+
+  <section id="informacion">
+    <div class="info">
+        <div class="row">
+            <div style="color: #fff;" class="col-md-6">
+                <h2>Información Detallada de Servicios</h2>
+                <ul>
+                    <li>
+                        <strong>Clases de Guitarra Acústica</strong>
+                        <ul>
+                            <li>Lecciones para principiantes, intermedios y avanzados.</li>
+                            <li>Técnicas de rasgueo y punteo.</li>
+                            <li>Acordes y progresiones.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Clases de Guitarra Eléctrica</strong>
+                        <ul>
+                            <li>Lecciones para todos los niveles.</li>
+                            <li>Técnicas de solo y riffs.</li>
+                            <li>Uso de pedales y efectos.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Teoría Musical</strong>
+                        <ul>
+                            <li>Lectura de partituras.</li>
+                            <li>Entrenamiento auditivo.</li>
+                            <li>Composición y arreglos.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Improvisación</strong>
+                        <ul>
+                            <li>Escalas y modos.</li>
+                            <li>Técnicas de improvisación.</li>
+                            <li>Desarrollo del fraseo musical.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Técnica y Ejercicios</strong>
+                        <ul>
+                            <li>Ejercicios de digitación.</li>
+                            <li>Técnicas de púa y dedos.</li>
+                            <li>Ejercicios de velocidad y precisión.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Estilos Musicales</strong>
+                        <ul>
+                            <li>Rock, blues, jazz, metal, pop, flamenco, entre otros.</li>
+                            <li>Análisis y práctica de canciones de diferentes géneros.</li>
+                            <li>Desarrollo de estilo propio.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Clases en Línea</strong>
+                        <ul>
+                            <li>Lecciones a través de plataformas de videoconferencia.</li>
+                            <li>Material de apoyo digital (videos, tablaturas, partituras).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Preparación para Exámenes</strong>
+                        <ul>
+                            <li>Preparación para exámenes de música (ABRSM, Trinity, etc.).</li>
+                            <li>Ayuda con presentaciones y audiciones.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Mantenimiento y Cuidado del Instrumento</strong>
+                        <ul>
+                            <li>Afinación y cambio de cuerdas.</li>
+                            <li>Mantenimiento básico de la guitarra.</li>
+                            <li>Consejos sobre la elección y cuidado del instrumento.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Asesoramiento en Equipamiento</strong>
+                        <ul>
+                            <li>Recomendaciones sobre guitarras, amplificadores y accesorios.</li>
+                            <li>Configuración de equipos y efectos.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <img class="custom-img" src="background/back2.jpg" alt="Imagen de guitarra" class="img-fluid">
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <footer>Luis Tavarez</footer>
+    </div>
+</section>
+<br>
+<hr>
+<br>
+<div id="contacto" class="contact-cont">
+    <section class="contacto">
+        <div class="contacto-grid">
+            <div class="contacto-imagen">
+                <center><img src="icon/logo.png" alt="Guitarra"></center>
+            </div>
+            <div style="color: black;" class="contacto-formulario">
+                <h1>Contacto</h1>
+                <p>Si tienes alguna pregunta o deseas más información sobre las clases de guitarra, por favor rellena el formulario a continuación o contáctanos a través de los siguientes medios:</p>
+                <ul>
+                    <li>Email: <a href="mailto:tavarezluis2055@gmail.com">tavarezluis2055@gmail.com</a></li>
+                    <li>Teléfono: <a href="tel:+8297852378">+829 785 2378</a></li>
+                </ul>
+                <form id="contact-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <br>
+                    <div class="dropdown">
+                        <button style="margin-bottom: 30px;" class="btn btn-secondary dropdown-toggle" type="button" id="privacyPolicyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Políticas de Privacidad
+                        </button>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="privacyPolicyDropdown">
+                            <li>
+                                <p class="dropdown-item-text">Al enviar este formulario, aceptas nuestras políticas de privacidad. Por favor, lee y acepta las políticas para continuar.</p>
+                                <a class="dropdown-item-text" href="poli.html">Políticas de privacidad</a>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-success" id="acceptPolicy">Acepto</button>
+                                    <button type="button" class="btn btn-danger" id="rejectPolicy">Rechazo</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <input type="hidden" id="policyAccepted" name="policyAccepted" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
